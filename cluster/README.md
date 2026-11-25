@@ -15,4 +15,4 @@ limactl shell cks-cp                            # or work on the nodes, like in 
 |---|---|
 | Stop | `limactl stop cks-worker cks-cp` |
 | Start | `limactl start cks-cp cks-worker` (node IPs are stable across restarts) |
-| Destroy | `limactl delete -f cks-cp cks-worker && rm ~/.kube/cks` |
+| Destroy | `cluster/down.sh` (VMs + `~/.kube/cks`; safe to re-run) |
